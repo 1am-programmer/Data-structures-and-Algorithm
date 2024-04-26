@@ -9,13 +9,13 @@ function App() {
     <div>
       <h1>Data Structures and Algorithm </h1>
       <div className="flex gap-6">
-        <button>
-          <Link to={"/data-structures"}>Data Structures</Link>
-        </button>
+        <Link to={"/data-structures"} className="">
+          Data Structures
+        </Link>
 
-        <button>
-          <Link to={"/algorithm"}>Algorithm</Link>
-        </button>
+        <Link to={"/algorithm"} className="">
+          Algorithm
+        </Link>
       </div>
     </div>
   );
