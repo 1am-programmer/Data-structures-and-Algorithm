@@ -5,6 +5,7 @@ import "./index.css";
 import Root from "../router/Root.jsx";
 import DataStructure from "./DataStructure.jsx";
 import Algorithm from "./Algorithm.jsx";
+import BigO from "../router/BigO.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/algorithm",
     element: <Algorithm />,
+  },
+  {
+    path: "/big-o",
+    element: <BigO />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

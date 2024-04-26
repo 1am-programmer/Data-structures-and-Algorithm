@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import "./App.css";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -7,15 +6,21 @@ function App() {
 
   return (
     <div>
-      <h1>Data Structures and Algorithm </h1>
-      <div className="flex gap-6">
-        <Link to={"/data-structures"} className="">
-          Data Structures
-        </Link>
+      <h1 className="text-3xl p-6 text-center">
+        Data Structures and Algorithm{" "}
+      </h1>
+      <div className=" flex gap-4 justify-center items-center ">
+        <button className=" px-4 py-2 bg-blue-500 text-white rounded-md">
+          <Link to={"/data-structures"} className="">
+            Data Structures
+          </Link>
+        </button>
 
-        <Link to={"/algorithm"} className="">
-          Algorithm
-        </Link>
+        <button className=" px-4 py-2 bg-red-500 text-white rounded-md">
+          <Link to={"/algorithm"} className="">
+            Algorithm
+          </Link>
+        </button>
       </div>
     </div>
   );
