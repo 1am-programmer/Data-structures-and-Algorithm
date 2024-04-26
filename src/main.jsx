@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Root from "./router/Root.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import Root from "../router/Root.jsx";
 import DataStructure from "./DataStructure.jsx";
 import Algorithm from "./Algorithm.jsx";
 
