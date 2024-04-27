@@ -163,7 +163,38 @@ export default function BigO() {
             e.g Merge Sort:
             <br />
             <span>Has a worse case runtime of O(n log n)</span>
+            The first part of merge sort cuts those lists into sublists with
+            half the numbers, whch is similar to binary search
           </span>
+        </p>
+      </div>
+      <div>
+        <h3 className="font-bold py-5 text-center">
+          Polynomial RunTime represented by O(n^2) or O(n^3)
+        </h3>
+        <span>
+          An algorithm is considered to have a polynomial runtime if for a given
+          value of n it's worst case runtime is in the form of O(n ^k)
+        </span>
+        <p>
+          Where K means some value which can be k=2 i.e Quadratic runtime, or
+          k=3 i.e Cubic runtime
+        </p>
+        <p className="italic">
+          Algorithm with an upper bound or a runtime with a big O value that is
+          polynomial are considered efficient and are likele to be used in
+          practice
+        </p>
+      </div>
+      <div>
+        <h3 className="font-bold py-5 text-center">
+          Unefficient Runtimes:- Exponential Runtimes
+        </h3>
+        <p>
+          {" "}
+          An Exponential runtime are algorithms with a Big O value of some
+          number raised to the nth power{" "}
+          <strong>O(X raise to power n) or O(Xn)</strong>
         </p>
       </div>
     </div>
