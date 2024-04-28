@@ -215,7 +215,132 @@ export default function BigO() {
           Why this algorithm is so inefficient in a real world scenario for
           example :- A password
         </p>
-        <p> </p>
+        <p>
+          {" "}
+          In a typical password field implemented well, we are allowed to use
+          letters of the english alphabet; which are 26 characters, numbers from
+          0 to 9; which are 10 characters, and a set of special characters which
+          are about 33 <br />
+          <span className="italic">
+            Which are a total of possible 69 characters
+          </span>
+          So typical each character in a password can be 1 out of 69 values
+        </p>
+
+        <ul>
+          <li className="list-disc">
+            Which means for a 1 character it is 69 ^ n in this case 69 ^ 1 = 69
+          </li>
+          <li className="list-disc">
+            Which means for a 2 character it is 69 ^ 2 = 4761
+          </li>
+          <li className="list-disc">
+            Which means for a 3 character it is 69 ^ 3 = 328, 509
+          </li>
+          <li className="list-disc">
+            Which means for a 4 character it is 69 ^ 4 = 22, 667, 121
+          </li>
+          <span className="italic font-bold list-decimal">
+            These values are the number of operations needed to guess the
+            password
+          </span>
+          <li className="list-disc">
+            In general, passwords are limited to around 20 characters, <br />
+            So the numbers of operations needed to guess the password in a worse
+            case scenario is 69 ^ 20 = 6E36
+          </li>{" "}
+          <br />
+          <span>
+            A Computer running on Intel core i5 can only caary out 65 million
+            instructions per second, so it will take the computer approximately
+            2^20 years to brute force this password;
+            <br />
+            That is why we should consider space complexity when choosing an
+            algorithm{" "}
+          </span>{" "}
+          <br />
+          <span>
+            That is why it is recommended you use a longer password, because
+            brute force is exponential in the worst case each character you add,
+            increases the operations by an exponent
+          </span>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="font-bold py-5 text-center">T</h3>
+        <p>
+          This Algorithm is best highlighted by a popular problem :- Traveling
+          Salesman{" "}
+        </p>
+        <p>
+          Given a list of cities, and the distance between each pair of cities,
+          what is the shortest possible route that visits each city, and they
+          returns to the origin city
+        </p>
+        <p className="font-bold underline">Solution:</p>{" "}
+        <div>
+          <p>Given 3 cities A, B and C</p> <br />
+          <span>
+            To figure out the shortest route, we have to come up with possible
+            routes
+          </span>
+          <ul>
+            <li className="list-disc">A-B-C</li>
+            <li className="list-disc">A-C-B</li>
+            <li className="list-disc">B-A-C</li>
+            <li className="list-disc">B-C-A</li>
+            <li className="list-disc">C-A-B</li>
+            <li className="list-disc">C-B-A</li>
+          </ul>
+          <span className="italic font-bold">Which are 6 routes</span>
+        </div>
+        <br />
+        <div>
+          <p>Given 4 cities A, B, C and D</p> <br />
+          <span>
+            To figure out the shortest route, we have to come up with possible
+            routes
+          </span>
+          <ul>
+            <li className="list-disc">A-B-C-D</li>
+            <li className="list-disc">A-B-D-C</li>
+
+            <li className="list-disc">A-D-B-C</li>
+            <li className="list-disc">A-D-C-B</li>
+
+            <li className="list-disc">A-C-B-D</li>
+            <li className="list-disc">A-C-D-B</li>
+
+            <li className="list-disc">B-A-C-D</li>
+            <li className="list-disc">B-A-D-C</li>
+
+            <li className="list-disc">B-C-A-D</li>
+            <li className="list-disc">B-C-D-C</li>
+
+            <li className="list-disc">B-D-A-C</li>
+            <li className="list-disc">B-D-C-A</li>
+
+            <li className="list-disc">C-A-B-D</li>
+            <li className="list-disc">C-A-D-B</li>
+
+            <li className="list-disc">C-D-A-B</li>
+            <li className="list-disc">C-D-B-A</li>
+
+            <li className="list-disc">C-B-A-D</li>
+            <li className="list-disc">C-B-D-A</li>
+
+            <li className="list-disc">D-A-B-C</li>
+            <li className="list-disc">D-A-C-B</li>
+
+            <li className="list-disc">D-C-A-B</li>
+            <li className="list-disc">D-C-B-A</li>
+
+            <li className="list-disc">D-B-A-C</li>
+            <li className="list-disc">D-B-C-A</li>
+          </ul>
+          <span className="italic font-bold">Which are 24 routes</span>
+        </div>
       </div>
     </div>
   );
