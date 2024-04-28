@@ -5,8 +5,8 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <h1 className="text-3xl p-6 text-center">
+    <div className="flex flex-col justify-center items-center h-screen">
+      <h1 className="text-3xl p-6 font-bold text-center">
         Data Structures and Algorithm{" "}
       </h1>
       <div className=" flex gap-4 justify-center items-center ">

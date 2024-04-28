@@ -197,6 +197,26 @@ export default function BigO() {
           <strong>O(X raise to power n) or O(Xn)</strong>
         </p>
       </div>
+      <div>
+        <h3 className="font-bold py-5 text-center">
+          Brute Force 10^n , where n represent the number of dials
+        </h3>
+        <p>
+          Searching through individual values, until you stumble on the right
+          one
+        </p>
+        <ul>
+          <li className="list-disc">
+            The reason this algorithm is so inefficient is because with one more
+            dial, the number of operations increase significantly
+          </li>
+        </ul>
+        <p>
+          Why this algorithm is so inefficient in a real world scenario for
+          example :- A password
+        </p>
+        <p> </p>
+      </div>
     </div>
   );
 }
