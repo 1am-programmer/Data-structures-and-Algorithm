@@ -341,6 +341,52 @@ export default function BigO() {
           </ul>
           <span className="italic font-bold">Which are 24 routes</span>
         </div>
+        <p>
+          The mathematical relationship that explains this is called{" "}
+          <strong>factorial, represented by n!</strong>
+        </p>
+        <p>
+          Factorials are basically n(n-1)(n-2) repeated until you reach the
+          number 1
+        </p>
+        <p>
+          If n! is 3!, it means 3 X 2 X 1 = 6
+          <br />
+          <span className="italic">
+            Which is the number of combination we got for three cities
+          </span>
+        </p>
+        <p>
+          If n! is 4!, it means 4 X 3 X 2 X 1 = 24
+          <br />
+          <span className="italic">
+            Which is the number of combination we got for four cities
+          </span>
+        </p>
+      </div>
+      <span>
+        In solving the Traveling Salesman problem, the most efficient algorithm
+        will have a factorial/ combination runtime or combination runtime And in
+        a situation where it is 200!, it was a longer time to solve
+      </span>
+      <p>Studying exponential algorithms are useful for two reasons</p>
+      <ul>
+        <li className="list-disc">
+          In studying how to make such algorithms efficient, we develop
+          strategies that are useful across the board and can be used to make
+          existing algorithms even more efficient
+        </li>
+        <li className="list-disc">
+          It is important to be aware of problems that take a long time to
+          solve, knowing the problem is somewhat unsolveable in a realistic
+          time, so you can focus your attention to other aspects of the problem
+        </li>
+      </ul>
+
+      <div>
+        <h3 className="underline">
+          How to determine the complexity of an algorithm
+        </h3>
       </div>
     </div>
   );
