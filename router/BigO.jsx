@@ -40,6 +40,7 @@ export default function BigO() {
         <h3 className="font-bold py-5 text-center">
           Constant Time represented as O(1)
         </h3>
+        <p className="italic">Most times loops are linear algorithms</p>
         <p>
           It take same amount of time in any given case , this means the runtime
           is constant, it doesn't change
@@ -384,7 +385,7 @@ export default function BigO() {
       </ul>
 
       <div>
-        <h3 className="underline">
+        <h3 className="underline justify-center">
           How to determine the complexity of an algorithm
         </h3>
       </div>

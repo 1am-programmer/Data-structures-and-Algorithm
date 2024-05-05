@@ -47,6 +47,20 @@ const Algorithm = () => {
             </li>
           </ul>
         </div>
+        <div>
+          <p className="font-bold underline">
+            There are 3 ways to represent Complexity
+          </p>
+          <p>
+            Asymptotic notations: Mathematical tools to represent Time and Space
+            Complexity
+          </p>
+          <ol>
+            <li>Big O notation - Worst case complexity</li>
+            <li>Omega notation - Best case complexity</li>
+            <li>Theta notation - Average case complexity</li>
+          </ol>
+        </div>
         <br />
         <div id="Types">
           <h2 className="underline">Keywords </h2>
